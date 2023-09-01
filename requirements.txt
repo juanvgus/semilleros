@@ -16,4 +16,4 @@ networkx==3.1
 shapely==2.0.1
 fiona==1.9.4.post1
 packaging==23.1
-pyproj==3.6.0
+pyproj==3.4.1
