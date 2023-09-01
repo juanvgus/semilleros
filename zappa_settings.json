@@ -1,0 +1,17 @@
+{
+    "crear": {
+        "app_function": "creatupz1.crear",
+        "keep_warm": false,
+        "role_name": "LabRole",
+        "manage_roles": false,
+        "apigateway_enabled": false,
+        "aws_region": "us-east-1",
+        "project_name": "crearupz1",
+        "runtime": "python3.8",
+        "s3_bucket": "semilleros1",
+        "events": [{
+           "function": "creatupz1.crear",
+           "expression": "cron(20 16 * * ? *)"
+       }]
+    }
+}
