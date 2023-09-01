@@ -37,7 +37,6 @@ jmespath==1.0.1
 kappa==0.6.0
 MarkupSafe==2.1.2
 mccabe==0.7.0
-packaging==23.0
 placebo==0.9.0
 pluggy==1.0.0
 pycodestyle==2.10.0
