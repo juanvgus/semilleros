@@ -15,7 +15,7 @@ def upz(lat, lon):
 
 s3_client = boto3.client('s3')
 source_bucket = event['Records'][0]['s3']['bucket']['semilleros1']
-source_key = event['Records'][0]['s3']['object']['dataset1.parquet']
+source_key = event['Records'][0]['s3']['object']['dataset0.parquet']
 target_bucket = "semilleros2"
 target_key = "dataset1.parquet"
 geolocator = Nominatim(user_agent="my_app")
