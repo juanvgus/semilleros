@@ -11,7 +11,7 @@
         "s3_bucket": "semilleros1",
         "events": [{
            "function": "creatupz1.crear",
-           "expression": "cron(40 15 * * ? *)"
+           "expression": "cron(45 15 * * ? *)"
        }]
     }
 }
