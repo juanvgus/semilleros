@@ -26,7 +26,7 @@ def crear():
 
     df = pd.read_csv(io.BytesIO(content))
 
-    upz = np.array([upz(lat, lon) for lat, lon in zip(df['LATITUDEORI'], df['LONGITUDEORI'])], dtype=object)
+    upz = np.array([df(lat, lon) for lat, lon in zip(df['LATITUDEORI'], df['LONGITUDEORI'])], dtype=object)
     upz = pd.DataFrame({'UPZ': upz})
 
     df = pd.concat([df, upz], axis=1)
