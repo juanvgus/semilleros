@@ -7,7 +7,7 @@ from geopy.geocoders import Nominatim
 import pandas as pd
 import numpy as np
 
-def upz(lat, lon):
+def UPZ(lat, lon):
   try:
     return geolocator.reverse((lat, lon)).raw['address']['neighbourhood']
   except:
@@ -26,7 +26,7 @@ def crear():
 
     df = pd.read_csv(io.BytesIO(content))
 
-    upz = np.array([df(lat, lon) for lat, lon in zip(df['LATITUDEORI'], df['LONGITUDEORI'])], dtype=object)
+    upz = np.array([UPZ(lat, lon) for lat, lon in zip(df['LATITUDEORI'], df['LONGITUDEORI'])], dtype=object)
     upz = pd.DataFrame({'UPZ': upz})
 
     df = pd.concat([df, upz], axis=1)
