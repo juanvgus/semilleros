@@ -15,9 +15,9 @@ def upz(lat, lon):
 
 s3_client = boto3.client('s3')
 source_bucket = 'semilleros1'
-source_key = 'dataset0.parquet'
+source_key = 'dataset0.csv'
 target_bucket = "semilleros2"
-target_key = "dataset0.parquet"
+target_key = "dataset0.csv"
 geolocator = Nominatim(user_agent="my_app")
 
 def crear():
